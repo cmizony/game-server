@@ -1,0 +1,15 @@
+960a961
+> 	wait_time=10 
+965c966,970
+< 			sleep 0.1
+---
+> 			sleep 1
+> 			wait_time=$((wait_time-1))
+> 			if [ "$wait_time" -eq 0 ];then
+> 				break;
+> 			fi
+966a972,975
+> 	fi
+> 
+> 	if [ "$wait_time" -eq 0 ]; then
+> 		as_user "$SETTINGS_USERNAME" "screen -X -S ${SERVER_SCREEN_NAME[$1]} quit"

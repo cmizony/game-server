@@ -1,0 +1,1608 @@
+{
+	"potions" :
+	[
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:potion"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 8269
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 0
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:potion"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 8270
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 1
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:potion"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 8259
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 2
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:potion"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 8229
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 3
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:potion"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 8225
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 4
+			}
+		]
+	],
+	"tools":
+	[
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:diamond_hoe"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 0
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:diamond_shovel"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 1
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:diamond_axe"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 2
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:diamond_sword"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 3
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:diamond_pickaxe"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 4
+			}
+		]
+	],
+	"dyes":
+	[
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 6
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 0
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 8
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 1
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 10
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 2
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 7
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 3
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 2
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 4
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 5
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 5
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 6
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 9
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 7
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 11
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 8
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 12
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 9
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 13
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 10
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:dye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 14
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 11
+			}
+		]
+	],
+	"blocks":
+	[
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:packed_ice"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 0
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:sea_lantern"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 1
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:stonebrick"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 2
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:nether_brick"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 3
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:quartz_block"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 4
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:glowstone"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 5
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:stone"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 2
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 6
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:log"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 2
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 7
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:wool"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 8
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:prismarine"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 9
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:stone"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 4
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 10
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:log2"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 11
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:red_sandstone"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 12
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:log"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 3
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 13
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:stone"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 6
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 14
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:brick_block"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 15
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:prismarine"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 2
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 16
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:prismarine"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 64
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 17
+			}
+		]
+	],
+	"enchants":
+	[
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:enchanted_book"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 10,
+				"name": "tag",
+				"value": [
+					{
+						"type": 9,
+						"name": "StoredEnchantments",
+						"value": {
+							"type": 10,
+							"value": [
+								[
+									{
+										"type": 2,
+										"name": "id",
+										"value": 6
+									},
+									{
+										"type": 2,
+										"name": "lvl",
+										"value": 1
+									}
+								]
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 0
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:enchanted_book"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 10,
+				"name": "tag",
+				"value": [
+					{
+						"type": 9,
+						"name": "StoredEnchantments",
+						"value": {
+							"type": 10,
+							"value": [
+								[
+									{
+										"type": 2,
+										"name": "id",
+										"value": 33
+									},
+									{
+										"type": 2,
+										"name": "lvl",
+										"value": 1
+									}
+								]
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 1
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:enchanted_book"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 10,
+				"name": "tag",
+				"value": [
+					{
+						"type": 9,
+						"name": "StoredEnchantments",
+						"value": {
+							"type": 10,
+							"value": [
+								[
+									{
+										"type": 2,
+										"name": "id",
+										"value": 21
+									},
+									{
+										"type": 2,
+										"name": "lvl",
+										"value": 3
+									}
+								]
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 2
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:enchanted_book"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 10,
+				"name": "tag",
+				"value": [
+					{
+						"type": 9,
+						"name": "StoredEnchantments",
+						"value": {
+							"type": 10,
+							"value": [
+								[
+									{
+										"type": 2,
+										"name": "id",
+										"value": 34
+									},
+									{
+										"type": 2,
+										"name": "lvl",
+										"value": 3
+									}
+								]
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 3
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:enchanted_book"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 10,
+				"name": "tag",
+				"value": [
+					{
+						"type": 9,
+						"name": "StoredEnchantments",
+						"value": {
+							"type": 10,
+							"value": [
+								[
+									{
+										"type": 2,
+										"name": "id",
+										"value": 32
+									},
+									{
+										"type": 2,
+										"name": "lvl",
+										"value": 5
+									}
+								]
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 4
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:enchanted_book"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 10,
+				"name": "tag",
+				"value": [
+					{
+						"type": 9,
+						"name": "StoredEnchantments",
+						"value": {
+							"type": 10,
+							"value": [
+								[
+									{
+										"type": 2,
+										"name": "id",
+										"value": 48
+									},
+									{
+										"type": 2,
+										"name": "lvl",
+										"value": 5
+									}
+								]
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 5
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:enchanted_book"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 10,
+				"name": "tag",
+				"value": [
+					{
+						"type": 9,
+						"name": "StoredEnchantments",
+						"value": {
+							"type": 10,
+							"value": [
+								[
+									{
+										"type": 2,
+										"name": "id",
+										"value": 16
+									},
+									{
+										"type": 2,
+										"name": "lvl",
+										"value": 5
+									}
+								]
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 6
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:enchanted_book"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 10,
+				"name": "tag",
+				"value": [
+					{
+						"type": 9,
+						"name": "StoredEnchantments",
+						"value": {
+							"type": 10,
+							"value": [
+								[
+									{
+										"type": 2,
+										"name": "id",
+										"value": 35
+									},
+									{
+										"type": 2,
+										"name": "lvl",
+										"value": 3
+									}
+								]
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 7
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:enchanted_book"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 10,
+				"name": "tag",
+				"value": [
+					{
+						"type": 9,
+						"name": "StoredEnchantments",
+						"value": {
+							"type": 10,
+							"value": [
+								[
+									{
+										"type": 2,
+										"name": "id",
+										"value": 51
+									},
+									{
+										"type": 2,
+										"name": "lvl",
+										"value": 1
+									}
+								]
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 8
+			}
+		]
+	],
+	"ores":
+	[
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:diamond_block"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 0
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:emerald_block"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 2
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 1
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:lapis_block"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 4
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 2
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:gold_block"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 8
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 3
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:iron_block"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 16
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 4
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:coal_block"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 5
+			}
+		]
+	],
+	"drops":
+	[
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:ghast_tear"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 1
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 0
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:blaze_rod"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 2
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 1
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:magma_cream"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 4
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 2
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:slime_ball"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 8
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 3
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:ender_pearl"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 16
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 4
+			}
+		],
+		[
+			{
+				"type": 8,
+				"name": "id",
+				"value": "minecraft:spider_eye"
+			},
+			{
+				"type": 2,
+				"name": "Damage",
+				"value": 0
+			},
+			{
+				"type": 1,
+				"name": "Count",
+				"value": 32
+			},
+			{
+				"type": 1,
+				"name": "Slot",
+				"value": 5
+			}
+		]
+	]
+}

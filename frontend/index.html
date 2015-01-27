@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft Huitaplus</title>
+
+<link rel="icon" type="image/png" href="/images/favicon.png">
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.1/css/jquery.dataTables.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.1.1/fullcalendar.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pnotify/2.0.0/pnotify.core.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.1/css/datepicker.min.css">
+
+<!-- Custom styles for this template -->
+<link href="assets/custom.css" rel="stylesheet">
+<link href="assets/d3.tip.css" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<!-- Carousel
+		================================================== -->
+<div class="carousel slide hidden-xs" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="images/banner_levels.jpg" alt="Main slide">
+			<div class="container">
+			</div>
+		</div>
+	</div>
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	<div class="banner">
+		<h2>Huitaplus Minecraft</h2>
+	</div>
+</div><!-- /.carousel -->
+
+<div class="container background">
+	<div class="row">
+		<div class="col-sm-1 hidden-xs rope">
+			<div class="rope-top">
+				<img src="images/rope-top.png">
+			</div>
+			<div class="rope-repeat">
+			</div>
+			<div class="rope-bottom">
+				<img src="images/rope-bottom.png">
+			</div>
+		</div>
+		<div class="col-sm-10" id="main-content">
+			<div class="intro">
+				<img src="images/logo_huitaplus.png">
+				<button type="button" class="btn btn-success pull-right btn-lg" id="join-server" data-toggle="modal" data-target="#modal-join-server">
+					<i class="fa fa-sign-in"></i> Join Server
+				</button>
+
+				<h3>Huitaplus Minecraft Server</h3>
+				We want a nice small community and keep the server alive for ever!<br>
+
+			</div>
+
+			<div class="modal fade" id="modal-join-server">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h4 class="modal-title"><i class="fa fa-sign-in"></i> Join Server Huitaplus</h4>
+						</div>
+						<div class="modal-body">
+							<form role="form">
+								<div class="form-group">
+									<label>Minecraft username</label>
+									<div class="input-group">
+										<div class="input-group-addon"><i class="fa fa-user"></i></div>
+										<input type="text" class="form-control col-sm-4" id="input-name" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label>Email</label>
+									<div class="input-group">
+										<div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+										<input type="email" class="form-control" id="input-email" required>
+									</div>
+									<p class="text-info">
+									<i class="fa fa-info-circle"></i> Check your spam if you don't receive the welcome email
+									</p>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"></i> Cancel</button>
+							<button type="button" class="btn btn-success" id="join-submit"><i class="fa fa-check"></i> Join</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			<div class="tabs">
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+						<ul class="nav navbar-nav">
+							<li class="active">
+							<a href="#tab-general" data-toggle="tab"><i class="fa fa-cubes text-success"></i> Minecraft</a>
+							</li>
+							<li>
+							<a href="#tab-players" data-toggle="tab"><i class="fa fa-users text-primary"></i> Players</a>
+							</li>
+							<li>
+							<a href="#tab-forum" data-toggle="tab"><i class="fa fa-comments text-info"></i> Forum</a>
+							</li>
+							<li>
+							<a href="#tab-rewards" data-toggle="tab"><i class="fa fa-gift text-danger"></i> Rewards</a>
+							</li>
+							<!-- TODO review events
+							<li>
+							<a href="#tab-calendar" data-toggle="tab"><i class="fa fa-calendar"></i> Events</a>
+							</li>
+							-->
+							<li>
+							<a href="#tab-structures" data-toggle="tab"><i class="fa fa-home text-success"></i> Structures</a>
+							</li>
+							<li>
+							<a href="#tab-map" data-toggle="tab"><i class="fa fa-compass text-warning"></i> Map</a>
+							</li>
+							<li>
+							<a href="#tab-statistics" data-toggle="tab"><i class="fa fa-bar-chart text-info"></i> Statistics</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+				<div class="tab-content">
+
+					<!--------------------------
+					-
+					-	View tab General
+					-
+					------------------------- -->
+					<div class="tab-pane active" id="tab-general">
+
+						<div class="panel panel-primary">
+
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-cubes"></i> General information avout the server</h3>
+							</div>
+
+							<div class="panel-body">						
+
+								<h3>Server presentation</h3>
+								<hr>
+
+								<div class="row">
+
+									<div class="col-md-6">
+										<ul class="list-unstyled">
+											<li><i class="fa fa-chevron-circle-right text-muted"></i> <span class="text-muted">Server IP: </span><span class="text-info">huitaplus.com</span></li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-muted">Creation: </span><span class="text-info">October 2014</span></li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-muted">Hardware: </span><span class="text-info">3 Cores at 3GHz &amp; 4GB RAM</span></li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-muted">Server costs: </span><span class="text-info">$12/month</span></li>
+										</ul>
+									</div>
+									
+									<div class="col-md-6">
+										<ul class="list-unstyled">
+											<li><i class="fa fa-chevron-circle-right text-muted"></i> <span class="text-muted">Version: </span><span class="text-info">1.8</span></li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-muted">Type: </span><span class="text-info">PVE</span></li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-muted">Biomes: </span><span class="text-info">large</span></li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-muted">Gamemode: </span><span class="text-info">Survival Hardcore</span></li>
+										</ul>
+
+									</div>
+									
+								</div>
+
+								<hr>
+
+								<div class="row">
+
+									<div class="col-md-6">
+
+										<ul class="list-unstyled">
+											<li><i class="fa fa-usd text-danger"></i> &nbsp;<span title="Get 1 life at the end of the week" class="text-muted" data-toggle="tooltip">Top weekly donator: <span id="weekly-donator"></span></span></li>
+											<li><i class="fa fa-usd text-info"></i> &nbsp;<span title="Get 1 life at the end of the day" class="text-muted" data-toggle="tooltip">Top daily donator: <span id="daily-donator"></span></span></li>
+											<li><i class="fa fa-usd text-success"></i> &nbsp;<span title="Players support the last 30 days" class="text-muted" data-toggle="tooltip">Sum monthly donation: <span id="monthly-donation"></span></span></li>
+										</ul>
+										<div class="progress" data-toggle="tooltip" title="Costs covered by players donations the last 30 days">
+											<div id="progress-donation" class="progress-bar progress-bar-success" style="min-width: 2em; width: 0%;">
+												0%
+											</div>
+										</div>
+
+									</div>
+
+									<div class="col-md-6">
+										<a href="https://www.streamtip.me/t/huitaplus" class="btn-donate" target="_blank">
+											<img src="images/donate.png" height="55px">
+										</a>
+										<p class="text-muted">Thank you for you help to keep the server online!</p>
+									</div>
+
+								</div>
+
+								<hr>
+
+								<div class="thumbnail clearfix server-feature" id="feature-lives">
+									<img src="images/heart.png" class="pull-left"> <h4><i class="fa fa-heart text-danger"></i> Lives</h4>
+
+									<p>
+									You start with 3 lives and are automatically resurrected the day after in the morning in case of death.<br>
+									Use the daily Token you receive in game to vote for players, the top 3 will get 1 life each at the end of the week.
+									</p>
+								</div>
+
+								<div class="thumbnail clearfix server-feature" id="feature-score">
+									<img src="images/trophy.png" class="pull-right"> <h4><i class="fa fa-trophy text-warning"></i></i> Score</h4>
+									<p>
+									The score system is calculated using the achievments system based on their difficulty.<br>
+									The more you do them the more you get points, up to a certain limit.<br>
+									</p>
+								</div>
+
+								<div class="thumbnail clearfix server-feature" id="feature-rewards">
+									<img src="images/gift.png" class="pull-left"> <h4><i class="fa fa-gift text-danger"></i> Rewards</h4>
+									
+									<p>
+									Get regularely a package of 9 nice items based on your score, every 1,000 points.<br>
+									You can also build nice structures and get rewarded for it with a package of items.
+									</p>
+								</div>
+
+								<div class="thumbnail clearfix server-feature" id="feature-structures">
+									<img src="images/home.png" class="pull-right"> <h4><i class="fa fa-home text-success"></i> Structures</h4>
+
+									<p>
+									You can own structures and get notified in-game and by email when players come to visit it<br>
+									If you play with friends they can be added on the whitelist to avoid notification for them<br>
+									</p>
+								</div>
+
+								<div class="thumbnail clearfix server-feature" id="feature-map">
+									<img src="images/map.png" class="pull-left"> <h4><i class="fa fa-compass text-warning"></i> Map</h4>
+
+									<p>
+									A dynamique world map is available when you will have discover all explored biomes.<br>
+									It includes point of interests (like structures) and a real time players actions update.
+									</p>
+								</div>
+
+								<h3>Roadmap</h3>
+								<hr>
+
+								<ul class="list-unstyled">
+									<li><i class="fa fa-check-square-o text-success"></i> <span class="text-muted">
+										Add new reward package including chests protected by password (special token)
+									</li>
+									<li><i class="fa fa-check-square-o text-success"></i> <span class="text-muted">
+										Worldborder increased based on the percentage of the world currently visited by players
+									</li>
+									<li><i class="fa fa-check-square-o text-success"></i> <span class="text-muted">
+										Host Teamspeak server for active players
+									</li>
+									<li><i class="fa fa-check-square-o text-success"></i> <span class="text-muted">
+										Add Website login and let players votes for more things (ban, structures, etc ...)
+									</li>
+									<li><i class="fa fa-check-square-o text-success"></i> <span class="text-muted">
+										Event section created by the community that are reminded in game and on the website
+									</li>
+								</ul>
+
+
+
+							</div>
+						</div>
+
+
+					</div>
+
+					<!--------------------------
+					-
+					-	View tab Players
+					-
+					------------------------- -->
+					<div class="tab-pane" id="tab-players">
+
+						<div class="panel panel-primary">
+
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-users"></i> Players on the server</h3>
+							</div>
+
+							<div class="panel-body">
+
+								<img src="images/heart.png" width="50px" class="pull-right">
+								<h3>Players</h3>
+								
+								<hr>
+
+								<ul class="list-unstyled">
+									<li><i class="fa fa-ticket"></i> <span class="text-muted" title="Top 3 all get 1 life at the end of the week" data-toggle="tooltip">Top weekly votes: <span id="top-votes"></span></span></li>
+									<li><i class="fa fa-circle text-success"></i> <span class="text-muted">Online players (<span id="online-players-count">0</span>): </span> <span id="online-players-list"></span></li>
+									<li><i class="fa fa-user"></i> <span class="text-muted" data-toggle="tooltip" title="Play at least 2 hours per week">Active players (<span id="active-players-count">0</span>): </span> <span id="active-players-list"></span></li>
+									<li id="online-server"><i class="fa fa-circle text-danger"></i> <span class="text-muted">Server Offline</span></li>
+								</ul>
+
+								<hr>
+
+								<table id="datatable-players" class="display" cellspacing="0" width="100%">
+									<thead>
+										<tr>
+											<th><i class="fa fa-user "></i> Name</th>
+											<th><i class="fa fa-heart text-danger"></i> Lives</th>
+											<th><i class="fa fa-ticket "></i> Weekly Votes</th>
+											<th><i class="fa fa-trophy text-warning"></i> Score</th>
+											<th><i class="fa fa-eye text-primary"></i> Enderchest</th>
+											<th><i class="fa fa-clock-o text-info"></i> Last Online</th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+
+							</div>
+						</div>
+
+						<div class="modal fade" id="modal-view-player">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										<h4 class="modal-title"><i class="fa fa-user"></i> Player Details</h4>
+									</div>
+									<div class="modal-body">
+
+										<div class="row">
+
+											<div class="col-md-7">
+												<h3 id="player-name"></h3>
+
+												<ul class="list-unstyled">
+													<li><span class="text-muted"><i class="fa fa-heart text-danger"></i> Lives: </span><span id="player-lives"></span></li>
+													<li><span class="text-muted"><i class="fa fa-calendar text-info"></i> Created: </span><span id="player-created"></span></li>
+													<li><span class="text-muted"><i class="fa fa-sign-in text-info"></i> Last Online: </span><span id="player-last-online"></span></li>
+													<li><span class="text-muted"><i class="fa fa-clock-o text-warning"></i> Time played: </span><span id="player-time-played"></span></li>
+													<li><i class="fa fa-bomb"></i> <span class="text-muted">Total deaths: </span><span id="player-total-deaths"></span></li>
+												</ul>
+
+											</div>
+											<div class="col-md-5">
+												<div class="panel panel-info">
+													<div class="panel-heading"><i class="fa fa-ticket"></i> Weekly votes</div>
+													<div class="panel-body">
+														<span class="text-muted">Total:</span> <span id="player-votes"></span> 
+														<a href="#" data-toggle="collapse" data-target="#collapse-vote">Vote for him?</a>
+
+														<div id="collapse-vote" class="collapse">
+															<div class="form-inline">
+																<input type="text" id="vote-token" class="form-control" placeholder="Token">
+																<input type="hidden" id="vote-uuid">
+																<button class="btn btn-success btn-sm" id="vote-submit"><i class="fa fa-thumbs-up"></i> Send</button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<hr>
+
+										<div role="tabpanel">
+											<ul class="nav nav-tabs">
+												<li class="active"><a href="#tab-player-achievments" data-toggle="tab">
+													<i class="fa fa-trophy text-warning"></i> Score (<span id="player-score">0</span>)</a>
+												</li>
+												<li><a href="#tab-player-rewards" data-toggle="tab">
+													<i class="fa fa-gift text-danger"></i> Packages (<span id="player-rewards-count">0</span>)</a>
+												</li>
+												<li><a href="#tab-player-enderchest" data-toggle="tab">
+													<i class="fa fa-eye text-primary"></i> Enderchest (<span id="player-enderchest-count">0</span>)</a>
+												</li>
+												<li><a href="#tab-player-biomes" data-toggle="tab">
+													<i class="fa fa-compass text-warning"></i> Biomes (<span id="player-biomes-count">0</span>)</a>
+												</li>
+											</ul>
+
+
+											<div class="tab-content">
+
+												<div class="tab-pane active" id="tab-player-achievments">
+													<table id="datatable-achievements" class="table display" cellspacing="0" width="100%">
+														<thead>
+															<tr>
+																<th>Icon</th>
+																<th>Achievements</th>
+																<th>Description</th>
+																<th>Difficulty</th>
+																<th>Points (%)</th>
+																<th>Max Points</th>
+															</tr>
+														</thead>
+														<tbody>
+														</tbody>
+													</table>
+												</div>
+
+												<div class="tab-pane " id="tab-player-rewards" style="overflow:auto">
+												</div>
+
+												<div class="tab-pane " id="tab-player-biomes" style="overflow:auto">
+													<div class="container-fluid" id="tab-player-biomes-content">
+													</div>
+												</div>
+
+												<div class="tab-pane " id="tab-player-enderchest" style="overflow:auto">
+
+													<p class="text-muted pull-right">Updated daily</p>
+													<h4><i class="fa fa-eye text-primary"></i> Enderchest content</h4>
+
+													<table class="table table-bordered table-condensed">
+														<tbody>
+														<tr>
+															<td id="enderchest-slot-0"></td>
+															<td id="enderchest-slot-1"></td>
+															<td id="enderchest-slot-2"></td>
+															<td id="enderchest-slot-3"></td>
+															<td id="enderchest-slot-4"></td>
+															<td id="enderchest-slot-5"></td>
+															<td id="enderchest-slot-6"></td>
+															<td id="enderchest-slot-7"></td>
+															<td id="enderchest-slot-8"></td>
+														</tr>
+														<tr>
+															<td id="enderchest-slot-9"></td>
+															<td id="enderchest-slot-10"></td>
+															<td id="enderchest-slot-11"></td>
+															<td id="enderchest-slot-12"></td>
+															<td id="enderchest-slot-13"></td>
+															<td id="enderchest-slot-14"></td>
+															<td id="enderchest-slot-15"></td>
+															<td id="enderchest-slot-16"></td>
+															<td id="enderchest-slot-17"></td>
+														</tr>
+														<tr>
+															<td id="enderchest-slot-18"></td>
+															<td id="enderchest-slot-19"></td>
+															<td id="enderchest-slot-20"></td>
+															<td id="enderchest-slot-21"></td>
+															<td id="enderchest-slot-22"></td>
+															<td id="enderchest-slot-23"></td>
+															<td id="enderchest-slot-24"></td>
+															<td id="enderchest-slot-25"></td>
+															<td id="enderchest-slot-26"></td>
+														</tr>
+														</tbody>
+													</table>
+												</div>
+
+
+
+											</div>
+										</div>
+									</div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+
+						<div class="modal fade" id="modal-vote-server">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										<h4 class="modal-title"><i class="fa fa-child"></i> Vote for the Server Huitaplus</h4>
+									</div>
+									<div class="modal-body">
+
+										<div class="well">
+											<h4 class="media-heading">Thank you!</h4>
+											Please vote for the server to make it more visible and bring new players to play with.
+										</div>
+
+
+										<div class="list-group">
+											<a href="http://minecraft-server-list.com/server/265335/vote" class="list-group-item list-group-item-warning" target="_blank">
+												<h4 class="list-group-item-heading"><i class="fa fa-cubes"></i> Minecraft Server List</h4>
+												<p class="list-group-item-text">- Click here to vote -</p>
+											</a>
+										</div>
+
+										<div class="list-group">
+											<a href="http://minecraftservers.org/vote/180978" class="list-group-item list-group-item-info" target="_blank">
+												<h4 class="list-group-item-heading"><i class="fa fa-cubes"></i> MinecraftServers</h4>
+												<p class="list-group-item-text">- Click here to vote -</p>
+											</a>
+										</div>
+
+										<div class="list-group">
+											<a href="http://minecraft-mp.com/server/66826/vote/" class="list-group-item list-group-item-success" target="_blank">
+												<h4 class="list-group-item-heading"><i class="fa fa-cubes"></i> Minecraft Multiplayer</h4>
+												<p class="list-group-item-text">- Click here to vote -</p>
+											</a>
+										</div>
+
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					<!--------------------------
+					-
+					-	View tab Rewards
+					-
+					------------------------- -->
+					<div class="tab-pane" id="tab-rewards">
+						<div class="panel panel-primary">
+
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-gift"></i> Reward System Details</h3>
+							</div>
+
+							<div class="panel-body">
+
+								<img src="images/gift.png" width="50px" class="pull-right">
+								<h3>Rewards content</h3>
+								<hr>
+
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#tab-reward-package" data-toggle="tab">
+										<i class="fa fa-cubes text-info"></i> Package of Items</a>
+									</li>
+									<li><a href="#tab-reward-single" data-toggle="tab">
+										<i class="fa fa-cube text-info"></i> Single Item</a>
+									</li>
+								</ul>
+
+
+								<div class="tab-content">
+
+									<div class="tab-pane active" id="tab-reward-package">
+
+										<p>A package contains 9 slots of items that are divided into multiple <code>groups</code>. You will get
+										one slot of each <code>group</code> except for the blocks which is 3 slots.	Inside a group, items will be randomly selected based on the following list:
+										</p>
+										<hr>
+
+										<div class="row">
+
+											<div class="col-md-7">
+
+												<div class="row">
+
+													<div class="col-md-4">
+														<code>Drops (x1)</code>
+														<ul class="list-unstyled">
+															<li><img src="images/items/370-0.png"</li> Ghast Tear x1
+															<li><img src="images/items/369-0.png"</li> Blaze Rod x2
+															<li><img src="images/items/378-0.png"</li> Magma Cream x4
+															<li><img src="images/items/341-0.png"</li> Slimeball x8
+															<li><img src="images/items/368-0.png"</li> Ender Pearl x16
+															<li><img src="images/items/375-0.png"</li> Spider Eye x32
+														</ul>
+														<hr>
+
+														<code>Blocks (x3)</code>
+														<ul class="list-unstyled">
+															<li><img src="images/items/174-0.png"</li> Packed Ice x64
+															<li><img src="images/items/98-1.png"</li> Mossy Stone x64
+															<li><img src="images/items/112-0.png"</li> Nether Brick x64
+															<li><img src="images/items/155-0.png"</li> Quartz Block x64
+															<li><img src="images/items/89-0.png"</li> Glowstone x32
+															<li><img src="images/items/1-2.png"</li> Granite x64
+															<li><img src="images/items/1-6.png"</li> Andesite x64
+															<li><img src="images/items/1-4.png"</li> Diorite x64
+															<li><img src="images/items/35-0.png"</li> Wool x64
+															<li><img src="images/items/162-1.png"</li> Dark Oak x64
+															<li><img src="images/items/17-3.png"</li> Jungle x64
+															<li><img src="images/items/17-2.png"</li> Birch x64
+															<li><img src="images/items/179-0.png"</li> Red Sand x64
+															<li><img src="images/items/45-0.png"</li> Brick x64
+															<li><img src="images/items/168-1.png"</li> Prismarine x64
+															<li><img src="images/items/168-0.png"</li> Prismarine x64
+															<li><img src="images/items/168-2.png"</li> Prismarine x64
+															<li><img src="images/items/169-0.png"</li> Sea Lantern x32
+														</ul>
+													</div>
+
+													<div class="col-md-4">
+														<code>Dyes (x1)</code>
+														<ul class="list-unstyled">
+															<li><img src="images/items/351-1.png"</li> Red x32
+															<li><img src="images/items/351-2.png"</li> Cactus gree x32
+															<li><img src="images/items/351-3.png"</li> Cocoa Bean x32
+															<li><img src="images/items/351-4.png"</li> Lapis Lazuli x32
+															<li><img src="images/items/351-5.png"</li> Purple x32
+															<li><img src="images/items/351-6.png"</li> Cyan x32
+															<li><img src="images/items/351-7.png"</li> Light gray x32
+															<li><img src="images/items/351-8.png"</li> Gray x32
+															<li><img src="images/items/351-9.png"</li> Pink x32
+															<li><img src="images/items/351-11.png"</li> Yellow x32
+															<li><img src="images/items/351-12.png"</li> Light Blue x32
+															<li><img src="images/items/351-13.png"</li> Magenta x32
+															<li><img src="images/items/351-14.png"</li> Orange x32
+														</ul>
+														<hr>
+
+														<code>Enchant (x1)</code>
+														<ul class="list-unstyled">
+															<li><img src="images/items/403-0.png"</li> Aqua Affinity
+															<li><img src="images/items/403-0.png"</li> Silk Touch
+															<li><img src="images/items/403-0.png"</li> Looting III
+															<li><img src="images/items/403-0.png"</li> Unbreaking III
+															<li><img src="images/items/403-0.png"</li> Efficiency V
+															<li><img src="images/items/403-0.png"</li> Power V
+															<li><img src="images/items/403-0.png"</li> Sharpness
+															<li><img src="images/items/403-0.png"</li> Fortune III
+															<li><img src="images/items/403-0.png"</li> Infinity
+														</ul>
+													</div>
+
+													<div class="col-md-4">
+														<code>Potion (x1)</code>
+														<ul class="list-unstyled">
+															<li><img src="images/items/374-0.png"</li> Regeneration II 
+															<li><img src="images/items/374-0.png"</li> Healing II 
+															<li><img src="images/items/374-0.png"</li> Invisibility 
+															<li><img src="images/items/374-0.png"</li> Breathing 
+															<li><img src="images/items/374-0.png"</li> Fire Resistance
+														</ul>
+														<hr>
+
+														<code>Tool (x1)</code>
+														<ul class="list-unstyled">
+															<li><img src="images/items/293-0.png"</li> Hoe
+															<li><img src="images/items/277-0.png"</li> Shovel
+															<li><img src="images/items/279-0.png"</li> Axe
+															<li><img src="images/items/276-0.png"</li> Sword
+															<li><img src="images/items/278-0.png"</li> Pickaxe
+														</ul>
+														<hr>
+
+														<code>Ores (x1)</code>
+														<ul class="list-unstyled">
+															<li><img src="images/items/57-0.png"</li> Diamond Block x1
+															<li><img src="images/items/133-0.png"</li> Emerald Block x2
+															<li><img src="images/items/22-0.png"</li> Lapis Lazuli x4
+															<li><img src="images/items/41-0.png"</li> Gold Block x8
+															<li><img src="images/items/42-0.png"</li> Iron Block x16
+															<li><img src="images/items/173-0.png"</li> Block of Coal x32
+														</ul>
+													</div>
+
+												</div>
+											</div>
+
+											<div class="col-md-5">
+												<div class="panel panel-info">
+
+													<div class="panel-heading">
+														<h3 class="panel-title">How can I get one?</h3>
+													</div>
+
+													<div class="panel-body">
+														<p class="text-muted">You currently will get a reward package every <code>1,000</code> score.</p>
+														<p class="text-muted">And also each time you build a <code>structure</code> (See tab Structure for more details)</p>
+														<hr>
+														<div class="form-inline">
+															<input type="text" id="reward-token" class="form-control" placeholder="Token">
+															<button class="btn btn-success btn-sm" id="reward-submit"><i class="fa fa-gift"></i> Claim</button>
+														</div>
+														<p class="text-info"><i class="fa fa-info-circle"></i> Sent by email (check spam?)</p>
+														<br>
+														<ul class="list-group" id="reward-package">
+														</ul>
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+
+
+									</div> 
+									<!-- End Tab reward Package -->
+
+									<div class="tab-pane" id="tab-reward-single">
+										
+										<p>A single item reward contain an item of the <code>Foodstuff</code> or <code>Flower</code> category that is randomly choosen based on the following list.<br>
+										If you are eligible for it you will receive it in game after a few minutes</p>
+										</p>
+										<hr>
+
+										<div class="row">
+
+											<div class="col-md-7">
+
+												<div class="row">
+
+
+													<div class="col-md-6">
+														<code>Foodstuff</code>
+
+														<ul class="list-unstyled">
+															<li><img src="images/items/260-0.png"</li> Apple x3
+															<li><img src="images/items/282-0.png"</li> Mushroom Stew x3
+															<li><img src="images/items/297-0.png"</li> Bread x3
+															<li><img src="images/items/400-0.png"</li> Pumpkin Pie x3
+															<li><img src="images/items/391-0.png"</li> Carrot x3
+															<li><img src="images/items/393-0.png"</li> Baked Potato x3
+															<li><img src="images/items/396-0.png"</li> Golden Carrot x1
+															<li><img src="images/items/322-0.png"</li> Golden Apple x1
+															<li><img src="images/items/322-1.png"</li> Notch Apple x1
+															<li><img src="images/items/320-0.png"</li> Cooked Porkshop x3
+															<li><img src="images/items/424-0.png"</li> Cooked Mutton x3
+															<li><img src="images/items/366-0.png"</li> Cooked Chicken x3
+															<li><img src="images/items/364-0.png"</li> Steak x3
+															<li><img src="images/items/350-0.png"</li> Cooked Fish x3
+															<li><img src="images/items/350-1.png"</li> Cooked Salmon x3
+															<li><img src="images/items/349-2.png"</li> Clownfish x3
+															<li><img src="images/items/360-0.png"</li> Melon x3
+															<li><img src="images/items/357-0.png"</li> Cookie x3
+															<li><img src="images/items/354-0.png"</li> Cake x3
+															<li><img src="images/items/413-0.png"</li> Rabbit Stew x3
+														</ul>
+													</div>
+
+													<div class="col-md-6">
+														<code>Flower</code>
+
+														<ul class="list-unstyled">
+															<li><img src="images/items/37-0.png"</li> Dandelion x3
+															<li><img src="images/items/38-0.png"</li> Poppy x3
+															<li><img src="images/items/38-1.png"</li> Blue Orchid x3
+															<li><img src="images/items/38-2.png"</li> Allium x3
+															<li><img src="images/items/38-3.png"</li> Azure Bluet x3
+															<li><img src="images/items/38-4.png"</li> Red Tulip x3
+															<li><img src="images/items/38-5.png"</li> Orange Tulip x3
+															<li><img src="images/items/38-6.png"</li> White Tulip x3
+															<li><img src="images/items/38-7.png"</li> Pink Tulip x3
+															<li><img src="images/items/38-8.png"</li> Oxeye Daisy x3
+															<li><img src="images/items/175-0.png"</li> Sunflower x3
+															<li><img src="images/items/175-1.png"</li> Lilac x3
+															<li><img src="images/items/175-2.png"</li> Double Tallgrass x3
+															<li><img src="images/items/175-3.png"</li> Large Fern x3
+															<li><img src="images/items/175-4.png"</li> Rose Bush x3
+															<li><img src="images/items/175-5.png"</li> Peony x3
+														</ul>
+													</div>
+
+												</div>
+											</div>
+
+											<div class="col-md-5">
+												<div class="panel panel-info">
+
+													<div class="panel-heading">
+														<h3 class="panel-title">How can I get one?</h3>
+													</div>
+
+													<div class="panel-body">
+														<p class="text-muted">Every time you <code>vote</code> for a player on the website.</p>
+													</div>
+
+												</div>
+												
+											</div>
+
+										</div>
+									</div> 
+									<!-- End Tab reward Single Item -->
+
+								</div> 
+							</div>
+
+						</div>
+					</div>
+
+					<!--------------------------
+					-
+					-	View tab Events
+					-
+					------------------------- -->
+					<div class="tab-pane" id="tab-calendar">
+
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-calendar"></i> Streaming sessions (PST)</h3>
+							</div>
+							<div class="panel-body">
+
+								<div class="alert alert-info alert-dismissible">
+									<button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button>
+									<a href="http://www.twitch.tv/huitaplus/profile" target="_blank"><i class="fa fa-twitch"></i> Calendar of streams by Huitaplus on Twitch</a><br>
+								</div>
+								<div id="full-calendar"></div>
+							</div>
+						</div>
+
+					</div>
+
+
+					<!--------------------------
+					-
+					-	View tab Forum
+					-
+					------------------------- -->
+					<div class="tab-pane" id="tab-forum">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-comments"></i> Discussions around the server</h3>
+							</div>
+							<div class="panel-body">
+								<iframe id="forum_embed"
+									src="javascript:void(0)"
+									scrolling="no"
+									frameborder="0"
+									width="900"
+									height="700">
+								</iframe>
+								<script type="text/javascript">
+document.getElementById('forum_embed').src =
+'https://groups.google.com/forum/embed/?place=forum/huitaplus'
++ '&showsearch=true&showpopout=true&showtabs=false'
++ '&parenturl=' + encodeURIComponent(window.location.href);
+								</script>
+							</div>
+						</div>
+					</div>
+
+					<!--------------------------
+					-
+					-	View tab Structure
+					-
+					------------------------- -->
+					<div class="tab-pane" id="tab-structures">
+
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-home"></i> Structures owned by players on the server</h3>
+							</div>
+
+							<div class="panel-body">
+
+								<img src="images/home.png" width="50px" class="pull-right">
+								<h3>Structure Benefits</h3>
+
+								<hr>
+
+								<div class="row">
+
+									<div class="col-md-7">
+										<p>Any players who own structure will get a <code>reward package</code> (9 items) and
+										<code>notifications</code> (message in-game and email) when someone enter in there area. If you want your friend
+										to not trigger notifications please ask on the forum.<br><br>
+
+										Actions done by any players inside those specifics area are <code>logged</code>. Any grief will be punished
+										by a server ban.<br>
+										Any construction done in the perimeter of a <code>referenced structure</code> can be punished by a server ban.
+										</p>
+									</div>
+
+									<div class="col-md-5">
+										<div class="panel panel-info">
+
+											<div class="panel-heading">
+												<h3 class="panel-title">How can I claim a structure?</h3>
+											</div>
+
+											<div class="panel-body">
+												<p class="text-muted"><i class="fa fa-comments-o"></i> You have to upload on the forum a photo of your creation
+												with your name and give the location privately.<br>
+												</p>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<hr>
+
+								<div id="structures-box">
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<!--------------------------
+					-
+					-	View tab Map
+					-
+					------------------------- -->
+					<div class="tab-pane " id="tab-map">
+						<div class="panel panel-primary">
+
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-compass"></i> Map</h3>
+							</div>
+
+							<div class="panel-body">
+								<img src="images/map.png" width="50px" class="pull-right">
+								<h3>World map</h3>
+								<hr>
+	
+								<div class="row">
+	
+									<div class="col-md-7">
+										<p>The worldmap is rendered periodically every day to keep the content updated. It contains the <code>overworld surface</code>
+										and a layout to hightlight <code>biomes</code>.<br><br>
+
+										The interface as been customized to show points of interests like structures and players. Players location are
+										updated every minute and include their life, food level, experience level and <code>actions</code>.<br><br>
+										
+										There are currently <code><span id="total-biomes-explored">0</span> biomes explored</code> by players as listed bellow:
+										</p>
+									</div>
+	
+									<div class="col-md-5">
+										<div class="panel panel-info">
+	
+											<div class="panel-heading">
+												<h3 class="panel-title">How to access to the map?</h3>
+											</div>
+	
+											<div class="panel-body">
+												<p class="text-muted">Once you will have explored all the biomes listed below you will receive an email
+												with the link to access to the worldmap<br>
+												</p>
+											</div>
+	
+										</div>
+									</div>
+								</div>
+
+								<hr>
+
+								
+								<div id="biomes-to-explore">
+								</div>
+
+								<hr>
+
+								<img src="images/map_watermark.jpg" class="img-responsive img-thumbnail">
+
+							</div>
+
+						</div>
+					</div>
+
+					<!--------------------------
+					-
+					-	View tab Statistics
+					-
+					------------------------- -->
+					<div class="tab-pane " id="tab-statistics">
+						<div class="panel panel-primary">
+
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-bar-chart"></i> Statistics</h3>
+							</div>
+
+							<div class="panel-body">
+
+								<span class="label label-primary pull-right">
+									<i class="fa fa-clock-o"></i> EST Time
+								</span>
+
+								<h3>Players Statistics</h3>
+								<hr>
+
+								<p>Tools to analyze players activity. You can use it to identify <code>griefs</code> and <code>lags</code>, please report if appropriate<br>
+								Every time your cursor change to a <b id="pointer-explanation" style="cursor:pointer">pointer</b> you can do an action on the component
+								</p>
+								<hr>
+
+								<div class="row">
+
+									<div class="col-md-4">
+										<div id="calendar-picker"></div>
+									</div>
+									<div class="col-md-8">
+										<div id="line-chart"></div>
+									</div>
+
+								</div>
+							
+								<hr>
+								<h4>Players matrix</h4>
+								<hr>
+
+								<div id="matrix-chart">
+								</div>
+
+								<hr>
+
+								<div class="row">
+
+									<div class="col-md-6">
+										<h4>Inventories</h4>
+										<hr>
+										<div id="bar-chart"></div>
+									</div>
+									<div class="col-md-6">
+										<h4>Actions</h4>
+										<hr>
+										<div id="treemap-chart"></div>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+		<div class="col-sm-1 hidden-xs rope">
+			<div class="rope-top">
+				<img src="images/rope-top.png">
+			</div>
+			<div class="rope-repeat">
+			</div>
+			<div class="rope-bottom">
+				<img src="images/rope-bottom.png">
+			</div>
+		</div>
+	</div>
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<footer>
+	<div id="footer-content">
+		<p><a href="http://www.twitch.tv/huitaplus/profile"><i class="fa fa-twitch"></i> Follow the server on Twitch</a></p>
+		<p>&copy; 2014 - Huitaplus</p>
+	</div>
+</footer>
+
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script defer src="https://cdn.datatables.net/1.10.1/js/jquery.dataTables.js"></script>
+<script defer src="https://cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/2.0.0/pnotify.core.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.1/js/bootstrap-datepicker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.1.1/fullcalendar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="assets/jquery.timeago.js" type="text/javascript"></script>
+
+<!-- Use Require JS -->
+<script src="assets/utils.js"></script>
+<script src="assets/minecraft.js"></script>
+<script src="assets/charts_helper.js"></script>
+<script src="assets/charts/line_chart.js"></script>
+<script src="assets/charts/matrix_chart.js"></script>
+<script src="assets/charts/treemap_chart.js"></script>
+<script src="assets/charts/bar_chart.js"></script>
+
+<script>
+$(document).ready(function() {
+
+		// API
+		BASE_URL = "http://localhost";
+
+		load_tab_general();
+
+		$('a[href="#tab-players"]').on('shown.bs.tab',function () {
+			load_tab_players();
+			$(this).unbind('shown.bs.tab');
+		});
+
+		$('a[href="#tab-calendar"]').on('shown.bs.tab',function () {
+			load_tab_calendar();
+			$(this).unbind('shown.bs.tab');
+		});
+
+		$('a[href="#tab-structures"]').on('shown.bs.tab',function () {
+			load_tab_structures();
+			$(this).unbind('shown.bs.tab');
+		});
+
+		$('a[href="#tab-rewards"]').on('shown.bs.tab',function () {
+			load_tab_rewards();
+			$(this).unbind('shown.bs.tab');
+		});
+
+		$('a[href="#tab-map"]').on('shown.bs.tab',function () {
+			load_tab_map();
+			$(this).unbind('shown.bs.tab');
+		});
+
+		$('a[href="#tab-statistics"]').on('shown.bs.tab',function () {
+			load_tab_statistics();
+			$(this).unbind('shown.bs.tab');
+		});
+
+		// Set responsive Background images
+		fill_background();
+		var timeoutHandle;
+		$(window).resize(function(){
+				window.clearTimeout(timeoutHandle);
+				timeoutHandle = window.setTimeout(function (){
+					fill_background();
+					},700);
+		});
+
+});
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-54375326-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+</body>

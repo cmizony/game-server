@@ -1,0 +1,276 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  background-image: url(../images/spelunky_texture_background.jpg);
+  background-repeat: repeat;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* CONTENT
+-------------------------------------------------- */
+
+.banner {
+	background: url(../images/banner.png) right no-repeat;
+	height: 123px;
+	position: absolute;
+	bottom: 50px;
+	left: 0px;
+	z-index: 999;
+}
+
+.banner h2 {
+	font-family: 'Ultra', serif;
+	color: #ffc067;
+	-webkit-text-stroke: 2px black;
+	text-shadow:
+       3px 3px 0 #000,
+       -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+       1px 1px 0 #000;
+	line-height: 83px;
+	margin: 20px 70px 0 20px;
+}
+
+.rope {
+	text-align: center;
+	height: 950px;
+}
+
+.rope-repeat {
+	background-color: transparent;
+	background: url(../images/rope-middle.png);
+	background-position: center;
+	height: 100%;
+}
+
+.intro {
+	border-style: solid;
+	border-width: 27px 27px 27px 25px;
+	-moz-border-image: url(../images/wood-border.png) 27 27 27 25 repeat;
+	-webkit-border-image: url(../images/wood-border.png) 27 27 27 25 repeat;
+	-o-border-image: url(../images/wood-border.png) 27 27 27 25 repeat;
+	border-image: url(../images/wood-border.png) 27 27 27 25 fill repeat;
+	overflow: auto;
+	color:white;
+	background-image: url(../images/wood_background.png);
+	background-repeat: repeat;
+}
+
+.intro img {
+	float: left;
+	margin-right:10px;
+}
+
+.intro p {
+	margin: 20px;
+	text-align: justify;
+}
+
+.tabs {
+	margin-top: 40px;
+}
+
+footer {
+	background-color: transparent;
+	background: url(../images/footer-bg.png);
+	height:239px;
+	padding: 115px 0;
+	text-align: center;
+	color: #FFFFFF;
+	margin-top:40px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/* CUSTOM CSS
+-------------------------------------------------- */
+
+.tab-content {
+	margin-top:30px;
+}
+
+#footer-content {
+	padding-top:10px;
+	padding-bottom:1px;
+	background-color:rgba(51,25,0,0.7);
+	width:300px;
+	margin:0 auto;
+	border-radius: 5px;
+	border:1px solid black;
+}
+
+#main-content {
+	min-height: 1050px;
+}
+
+.panel.panel-primary {
+	min-height: 800px;
+}
+
+.btn-donate {
+	opacity:0.8;
+}
+
+.btn-donate > img
+{
+	margin-bottom:15px;
+}
+
+.btn-donate:hover {
+	opacity:1;
+}
+
+#daily-donator code
+{
+	color:#31708f;
+}
+
+#top-votes code
+{
+	color:#777;
+}
+
+#monthly-donation code
+{
+	color:#3c763d;
+}
+
+#online-players-list code
+{
+	color:#3c763d;
+}
+
+#active-players-list code
+{
+	color:#31708f;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button
+{
+	padding:2px;
+}
+
+.structure
+{
+	min-height: 270px;
+	margin: 5px;
+}
+
+#join-server
+{
+	margin:15px;
+}
+
+.server-feature
+{
+	cursor:pointer;
+}
+
+.server-feature:hover
+{
+	background-color:#f7f7f9;
+}
+
+.server-feature > img
+{
+	margin-left:10px;
+	margin-right:10px;
+	width:100px;
+}
+
