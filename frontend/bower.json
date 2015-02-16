@@ -1,0 +1,11 @@
+{
+	"name": "minecraft viewer",
+	"version": "0.0.1",
+	"dependencies": {
+		"jquery": ">=1.9.1",
+		"bootstrap": "~3.3.2",
+		"datatables": "~1.10.1",
+		"fancybox": "~2.1.5",
+		"pnotify": "~2.0.1"
+	}
+}

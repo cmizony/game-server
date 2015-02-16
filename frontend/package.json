@@ -1,0 +1,7 @@
+{
+	"name": "Minecraft_frontend",
+	"description": "A package that render Minecraft back-end application",
+	"devDependencies": {
+		"bower": "~1.3.12"
+	}
+}
