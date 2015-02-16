@@ -1,0 +1,231 @@
+<div class="tab-pane" id="tab-players">
+
+	<div class="panel panel-primary">
+
+		<div class="panel-heading">
+			<h3 class="panel-title"><i class="fa fa-users"></i> Players on the server</h3>
+		</div>
+
+		<div class="panel-body">
+
+			<img src="images/heart.png" width="50px" class="pull-right">
+			<h3>Players</h3>
+
+			<hr>
+
+			<ul class="list-unstyled">
+				<li><i class="fa fa-ticket"></i> <span class="text-muted" title="Top 3 all get 1 life at the end of the week" data-toggle="tooltip">Top weekly votes: <span id="top-votes"></span></span></li>
+				<li><i class="fa fa-circle text-success"></i> <span class="text-muted">Online players (<span id="online-players-count">0</span>): </span> <span id="online-players-list"></span></li>
+				<li><i class="fa fa-user"></i> <span class="text-muted" data-toggle="tooltip" title="Play at least 2 hours per week">Active players (<span id="active-players-count">0</span>): </span> <span id="active-players-list"></span></li>
+				<li id="online-server"><i class="fa fa-circle text-danger"></i> <span class="text-muted">Server Offline</span></li>
+			</ul>
+
+			<hr>
+
+			<table id="datatable-players" class="display" cellspacing="0" width="100%">
+				<thead>
+					<tr>
+						<th><i class="fa fa-user "></i> Name</th>
+						<th><i class="fa fa-heart text-danger"></i> Lives</th>
+						<th><i class="fa fa-ticket "></i> Weekly Votes</th>
+						<th><i class="fa fa-trophy text-warning"></i> Score</th>
+						<th><i class="fa fa-eye text-primary"></i> Enderchest</th>
+						<th><i class="fa fa-clock-o text-info"></i> Last Online</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal-view-player">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title"><i class="fa fa-user"></i> Player Details</h4>
+				</div>
+				<div class="modal-body">
+
+					<div class="row">
+
+						<div class="col-md-7">
+							<h3 id="player-name"></h3>
+
+							<ul class="list-unstyled">
+								<li><span class="text-muted"><i class="fa fa-heart text-danger"></i> Lives: </span><span id="player-lives"></span></li>
+								<li><span class="text-muted"><i class="fa fa-calendar text-info"></i> Created: </span><span id="player-created"></span></li>
+								<li><span class="text-muted"><i class="fa fa-sign-in text-info"></i> Last Online: </span><span id="player-last-online"></span></li>
+								<li><span class="text-muted"><i class="fa fa-clock-o text-warning"></i> Time played: </span><span id="player-time-played"></span></li>
+								<li><i class="fa fa-bomb"></i> <span class="text-muted">Total deaths: </span><span id="player-total-deaths"></span></li>
+							</ul>
+
+						</div>
+						<div class="col-md-5">
+							<div class="panel panel-info">
+								<div class="panel-heading"><i class="fa fa-ticket"></i> Weekly votes</div>
+								<div class="panel-body">
+									<span class="text-muted">Total:</span> <span id="player-votes"></span> 
+									<a href="#" data-toggle="collapse" data-target="#collapse-vote">Vote for him?</a>
+
+									<div id="collapse-vote" class="collapse">
+										<div class="form-inline">
+											<input type="text" id="vote-token" class="form-control" placeholder="Token">
+											<input type="hidden" id="vote-uuid">
+											<button class="btn btn-success btn-sm" id="vote-submit"><i class="fa fa-thumbs-up"></i> Send</button>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<hr>
+
+					<div role="tabpanel">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab-player-achievments" data-toggle="tab">
+								<i class="fa fa-trophy text-warning"></i> Score (<span id="player-score">0</span>)</a>
+							</li>
+							<li><a href="#tab-player-rewards" data-toggle="tab">
+								<i class="fa fa-gift text-danger"></i> Packages (<span id="player-rewards-count">0</span>)</a>
+							</li>
+							<li><a href="#tab-player-enderchest" data-toggle="tab">
+								<i class="fa fa-eye text-primary"></i> Enderchest (<span id="player-enderchest-count">0</span>)</a>
+							</li>
+							<li><a href="#tab-player-biomes" data-toggle="tab">
+								<i class="fa fa-compass text-warning"></i> Biomes (<span id="player-biomes-count">0</span>)</a>
+							</li>
+						</ul>
+
+
+						<div class="tab-content">
+
+							<div class="tab-pane active" id="tab-player-achievments">
+								<table id="datatable-achievements" class="table display" cellspacing="0" width="100%">
+									<thead>
+										<tr>
+											<th>Icon</th>
+											<th>Achievements</th>
+											<th>Description</th>
+											<th>Difficulty</th>
+											<th>Points (%)</th>
+											<th>Max Points</th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="tab-pane " id="tab-player-rewards" style="overflow:auto">
+							</div>
+
+							<div class="tab-pane " id="tab-player-biomes" style="overflow:auto">
+								<div class="container-fluid" id="tab-player-biomes-content">
+								</div>
+							</div>
+
+							<div class="tab-pane " id="tab-player-enderchest" style="overflow:auto">
+
+								<p class="text-muted pull-right">Updated daily</p>
+								<h4><i class="fa fa-eye text-primary"></i> Enderchest content</h4>
+
+								<table class="table table-bordered table-condensed">
+									<tbody>
+										<tr>
+											<td id="enderchest-slot-0"></td>
+											<td id="enderchest-slot-1"></td>
+											<td id="enderchest-slot-2"></td>
+											<td id="enderchest-slot-3"></td>
+											<td id="enderchest-slot-4"></td>
+											<td id="enderchest-slot-5"></td>
+											<td id="enderchest-slot-6"></td>
+											<td id="enderchest-slot-7"></td>
+											<td id="enderchest-slot-8"></td>
+										</tr>
+										<tr>
+											<td id="enderchest-slot-9"></td>
+											<td id="enderchest-slot-10"></td>
+											<td id="enderchest-slot-11"></td>
+											<td id="enderchest-slot-12"></td>
+											<td id="enderchest-slot-13"></td>
+											<td id="enderchest-slot-14"></td>
+											<td id="enderchest-slot-15"></td>
+											<td id="enderchest-slot-16"></td>
+											<td id="enderchest-slot-17"></td>
+										</tr>
+										<tr>
+											<td id="enderchest-slot-18"></td>
+											<td id="enderchest-slot-19"></td>
+											<td id="enderchest-slot-20"></td>
+											<td id="enderchest-slot-21"></td>
+											<td id="enderchest-slot-22"></td>
+											<td id="enderchest-slot-23"></td>
+											<td id="enderchest-slot-24"></td>
+											<td id="enderchest-slot-25"></td>
+											<td id="enderchest-slot-26"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade" id="modal-vote-server">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title"><i class="fa fa-child"></i> Vote for the Server Huitaplus</h4>
+				</div>
+				<div class="modal-body">
+
+					<div class="well">
+						<h4 class="media-heading">Thank you!</h4>
+						Please vote for the server to make it more visible and bring new players to play with.
+					</div>
+
+
+					<div class="list-group">
+						<a href="http://minecraft-server-list.com/server/265335/vote" class="list-group-item list-group-item-warning" target="_blank">
+							<h4 class="list-group-item-heading"><i class="fa fa-cubes"></i> Minecraft Server List</h4>
+							<p class="list-group-item-text">- Click here to vote -</p>
+						</a>
+					</div>
+
+					<div class="list-group">
+						<a href="http://minecraftservers.org/vote/180978" class="list-group-item list-group-item-info" target="_blank">
+							<h4 class="list-group-item-heading"><i class="fa fa-cubes"></i> MinecraftServers</h4>
+							<p class="list-group-item-text">- Click here to vote -</p>
+						</a>
+					</div>
+
+					<div class="list-group">
+						<a href="http://minecraft-mp.com/server/66826/vote/" class="list-group-item list-group-item-success" target="_blank">
+							<h4 class="list-group-item-heading"><i class="fa fa-cubes"></i> Minecraft Multiplayer</h4>
+							<p class="list-group-item-text">- Click here to vote -</p>
+						</a>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
