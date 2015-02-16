@@ -188,7 +188,6 @@
 
 <!-- Use Require JS -->
 <script src="assets/utils.js"></script>
-<script src="assets/minecraft.js"></script>
 <script src="assets/charts_helper.js"></script>
 <script src="assets/charts/line_chart.js"></script>
 <script src="assets/charts/matrix_chart.js"></script>
@@ -200,44 +199,15 @@
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="app/app.js"></script>
 <script src="app/controllers/controllers.js"></script>
+<script src="app/controllers/players.js"></script>
+<script src="app/controllers/general.js"></script>
+<script src="app/controllers/statistics.js"></script>
 
 <script>
 $(document).ready(function() {
 
 		// API
 		BASE_URL = "http://localhost";
-
-		load_tab_general();
-
-		$('a[href="#tab-players"]').on('shown.bs.tab',function () {
-			load_tab_players();
-			$(this).unbind('shown.bs.tab');
-		});
-
-		$('a[href="#tab-calendar"]').on('shown.bs.tab',function () {
-			load_tab_calendar();
-			$(this).unbind('shown.bs.tab');
-		});
-
-		$('a[href="#tab-structures"]').on('shown.bs.tab',function () {
-			load_tab_structures();
-			$(this).unbind('shown.bs.tab');
-		});
-
-		$('a[href="#tab-rewards"]').on('shown.bs.tab',function () {
-			load_tab_rewards();
-			$(this).unbind('shown.bs.tab');
-		});
-
-		$('a[href="#tab-map"]').on('shown.bs.tab',function () {
-			load_tab_map();
-			$(this).unbind('shown.bs.tab');
-		});
-
-		$('a[href="#tab-statistics"]').on('shown.bs.tab',function () {
-			load_tab_statistics();
-			$(this).unbind('shown.bs.tab');
-		});
 
 		// Set responsive Background images
 		fill_background();

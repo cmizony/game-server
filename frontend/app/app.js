@@ -19,7 +19,7 @@ app.config (function ($routeProvider) {
 			})
 		.when('/events',
 			{
-				controller: 'EmptyController',
+				controller: 'EventsController',
 				templateUrl: 'app/partials/events.html'
 			})
 		.when('/forum',
@@ -34,7 +34,7 @@ app.config (function ($routeProvider) {
 			})
 		.when('/map',
 			{
-				controller: 'EmptyController',
+				controller: 'MapController',
 				templateUrl: 'app/partials/map.html'
 			})
 		.when('/statistics',
