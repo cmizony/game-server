@@ -1,3 +1,5 @@
+[![Dependency Status](https://www.versioneye.com/user/projects/54e2be9d8bd69f54f100005a/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54e2be9d8bd69f54f100005a)
+
 ## Synopsis
 Features on top of minecraft server
 * Minecraft server backend API and misc functionalities implemented in PHP using CodeIgniter v3
