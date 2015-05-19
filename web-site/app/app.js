@@ -41,5 +41,10 @@ app.config (function ($routeProvider) {
 			{
 				controller: 'StatisticsController',
 				templateUrl: 'app/partials/statistics.html'
-			});
+			})
+    .state('otherwise',
+      {
+        controller: 'GeneralController',
+        templateUrl: 'app/partials/general.html'
+      });
 });

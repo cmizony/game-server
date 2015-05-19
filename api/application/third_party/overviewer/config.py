@@ -8,6 +8,7 @@ renders["survivalday"] = {
         "title": "Day Overworld",
         "rendermode": my_smooth_lighting,
         "dimension": "overworld",
+        "crop": (-3000, -3000, 3000, 3000),
         }
 
 
