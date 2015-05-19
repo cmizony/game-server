@@ -42,7 +42,7 @@ app.config (function ($routeProvider) {
 				controller: 'StatisticsController',
 				templateUrl: 'app/partials/statistics.html'
 			})
-    .otherwise({
+    .otherwise(
       {
         controller: 'GeneralController',
         templateUrl: 'app/partials/general.html'
