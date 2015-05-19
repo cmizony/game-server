@@ -1,13 +1,15 @@
 [![Dependency Status](https://www.versioneye.com/user/projects/54e2be9d8bd69f54f100005a/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54e2be9d8bd69f54f100005a)
 
-## Synopsis
-Features on top of minecraft server
+## Minecraft Server
+
+Features built on top of the server
 * Minecraft server backend API and misc functionalities implemented in PHP using CodeIgniter v3
 * Minecraft server front-end web-app that display the information from the back-end API
 
 ## Details
-The idea of this project is to create a wrapper around the game minecraft (v1.8) to propose a server self controlled by the community.
-It currently support the following features:
+
+Wrapper around minecraft (v1.8) to propose a server self controlled by the community.
+It currently supports the following features:
 
 * Automatic sign-up on white-list from the website
 * Score system based on points calculated using the achievment system
@@ -20,7 +22,7 @@ It currently support the following features:
 
 ## Usage
 
-There is currently no easy deployment and dependencies install, please ask for details. Here are the main steps:
+There is currently no easy deployment and dependencies install. Here are the main steps:
 
 * Set up frontend config for API base url
 * Create Backend Crontab
@@ -30,8 +32,9 @@ There is currently no easy deployment and dependencies install, please ask for d
 * Set up sudoers privileges
 
 ## TODO
-* Create Event system
-* Add player log in system (unique token)
-* Migrate frontend to mvc framework
-* API Documentation
-* Backend deployment
+
+* :white\_large\_square: Create Event system
+* :white\_large\_square: Add player log in system (unique token)
+* :white\_large\_square: Migrate frontend to mvc framework
+* :white\_large\_square: API Documentation
+* :white\_large\_square: Backend deployment
