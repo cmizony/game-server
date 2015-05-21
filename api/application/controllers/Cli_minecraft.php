@@ -505,6 +505,15 @@ class Cli_minecraft extends CI_Controller {
 
 		// Reset End for Ender Dragon
 		$this->server->reset_end();
+    
+    // Add one life to dead players
+		$this->db->select('name');
+		$this->db->from('players');
+		$this->db->where('lives <=',0);
+		$query = $this->db->get();
+
+		foreach ($query->result() as $row)
+			$this->add_life($row->name);
 	}
 
 	public function create_reward($uuid,$source = "Manual")
