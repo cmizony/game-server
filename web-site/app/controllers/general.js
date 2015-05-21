@@ -25,12 +25,16 @@ app.controller('GeneralController', function ($scope) {
 		$("#daily-donator").html(content);
 
 		// Sum monthly donation
-		var serverCost = 12;
-		var percentage = parseInt(data.sum_monthly*100/serverCost);
+		var dailyServerCost = 0.4;
+    var serverCreation = new Date(2014,9);
+    var daysDifference = (new Date() - serverCreation) / 86400000;
+    var payedDays = data.sum_total / dailyServerCost;
+
+		var percentage = parseInt(payedDays*100/daysDifference);
 
 		$("#progress-donation").css("width",Math.min(100,percentage) + "%");
 		$("#progress-donation").html(percentage + "%");
-		$("#monthly-donation").html("<code>$" +  data.sum_monthly + "</code>");
+		$("#total-donation").html("<code>$" +  data.sum_total + "</code>");
 	}	
 
 	function send_suscription ()

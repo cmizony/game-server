@@ -75,11 +75,11 @@ class Minecraft extends REST_Controller {
 
 		$top_daily_donator = $this->server->top_tips_from(strtotime("today 5AM",strtotime("-5 hour")));
 		$top_weekly_donator = $this->server->top_tips_from(strtotime('last monday 4AM', strtotime('tomorrow')));
-		$sum_monthly_donations = $this->server->sum_tips_from(strtotime('-1 month'));
+		$sum_total_donations = $this->server->sum_tips_from(strtotime('January 2014'));
 
 		$top_donations['top_daily'] = $top_daily_donator;
 		$top_donations['top_weekly'] = $top_weekly_donator;
-		$top_donations['sum_monthly'] = $sum_monthly_donations;
+		$top_donations['sum_total'] = $sum_total_donations;
 
 		$this->response($top_donations, 200); 
 	}
