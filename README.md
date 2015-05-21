@@ -1,4 +1,5 @@
-[![Dependency Status](https://www.versioneye.com/user/projects/54e2be9d8bd69f54f100005a/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54e2be9d8bd69f54f100005a)
+[![Dependency Status](https://www.versioneye.com/user/projects/555d6b1c634daa5dc8000cd3/badge.svg?style=flat)](https://www.versioneye.com/user/projects/555d6b1c634daa5dc8000cd3)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/cmizony/game-server?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Minecraft Server
 
