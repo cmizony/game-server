@@ -252,9 +252,9 @@ footer {
 	margin: 5px;
 }
 
-#join-server
+.btn-join-server
 {
-	margin:15px;
+	margin-top:15px;
 }
 
 .server-feature
