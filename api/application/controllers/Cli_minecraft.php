@@ -126,10 +126,12 @@ class Cli_minecraft extends CI_Controller {
 				{
 					if (count($server_biomes) ==
 						count($player_stats['achievement.exploreBiomesProgress']))
-					{
+          {
+            /* Disable feature
 						$this->load->library('promotion');
 						$this->promotion->email_map($row->gmail,$row->name); 
-						$data['map_access'] = 1;
+            $data['map_access'] = 1;
+             */
 					}
 				}
 			}
