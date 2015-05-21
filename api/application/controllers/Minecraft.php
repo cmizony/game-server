@@ -41,7 +41,7 @@ class Minecraft extends REST_Controller {
 		}
 
 		// Get Active players
-		$this->db->select('name');
+		$this->db->select('name,uuid');
 		$this->db->from('logs');
 		$this->db->where('date >',strtotime("-2 week"));
 		$this->db->group_by('name');
