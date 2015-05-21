@@ -195,7 +195,7 @@ app.controller('PlayersController', function ($scope) {
 		for (var i=0; i < data.top_votes.length; i++)
 		{
 			var player = data.top_votes[i];
-			content += "<code>"+player.username+" ("+player.vote+")</code> ";
+			content += "<code style=\"cursor:pointer\" class=\"player-modal\" data-uuid=\"" +	player.uuid + "\">" + player.username+" ("+player.vote+")</code> ";
 		}
 		$("#top-votes").html(content);
 
@@ -204,11 +204,10 @@ app.controller('PlayersController', function ($scope) {
 		for (var i=0; i < data.active_players.length; i++)
 		{
 			var player = data.active_players[i];
-			content += "<code>"+player+"</code> ";
+			content += "<code style=\"cursor:pointer\" class=\"player-modal\" data-uuid=\"" +	player.uuid + "\">" + player.username + "</code> ";
 		}
 		$("#active-players-list").html(content);
 		$("#active-players-count").html(data.active_players.length);
-
 
 		// If server offline
 		if (data.error)
@@ -234,6 +233,9 @@ app.controller('PlayersController', function ($scope) {
 			}
 		}
 		$("#online-players-list").html(content);
+    
+    // Bind modal click
+    $('.player-modal').unbind("click").click(load_player_details);
 	}
 
 	function load_datatable (data)  {
@@ -250,7 +252,7 @@ app.controller('PlayersController', function ($scope) {
 			player.created = format_timestamp (player.created);
 
 			// create datatable-uuid link
-			player.name = "<a style=\"cursor:pointer\" class=\"datatable-uuid\" data-uuid=\"" +
+			player.name = "<a style=\"cursor:pointer\" class=\"player-modal\" data-uuid=\"" +
 				player.uuid + 
 				"\">"+player.name + 
 				"</a>";
@@ -274,7 +276,7 @@ app.controller('PlayersController', function ($scope) {
 			"order": [[3,"desc" ]],
 			"data": dataSet,
 			"fnDrawCallback": function( oSettings ) {
-				$('.datatable-uuid').unbind("click").click(load_player_details);
+				$('.player-modal').unbind("click").click(load_player_details);
 			}
 		});
 

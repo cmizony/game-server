@@ -21,7 +21,7 @@ class Minecraft extends REST_Controller {
 	public function summary_players_get () 
 	{
 		// Get Top 3 votes
-		$this->db->select('name,votes');
+		$this->db->select('name,votes,uuid');
 		$this->db->from('players');
 		$this->db->where('votes >',0);
 		$this->db->order_by('votes','desc');
@@ -34,7 +34,9 @@ class Minecraft extends REST_Controller {
 		{
 			$vote_player = new stdClass;
 			$vote_player->username = $row->name;
-			$vote_player->vote = $row->votes;
+      $vote_player->vote = $row->votes;
+      $vote_player->uuid = $row->uuid;
+      
 			array_push($top_votes,$vote_player);
 		}
 
@@ -48,8 +50,13 @@ class Minecraft extends REST_Controller {
 		$query = $this->db->get();
 
 		$active_players = array();
-		foreach ($query->result() as $row)
-			array_push($active_players,$row->name);
+    foreach ($query->result() as $row)
+    {
+			$active_player = new stdClass;
+			$active_player->username = $row->name;
+      $active_player->uuid = $row->uuid;
+      array_push($active_players,$active_player);
+    }
 
 		// Get Players online
 		$players = $this->server->get_players(); 
