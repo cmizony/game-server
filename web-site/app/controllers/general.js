@@ -6,11 +6,11 @@ app.controller('GeneralController', function ($scope) {
 	$.get(BASE_URL+"/summary_donations", load_summary_donations);
 
 	// Bind feature to open tabs
-	$("#feature-lives").click(function(){ window.location.href='/players' });
-	$("#feature-score").click(function(){ window.location.href='players' });
-	$("#feature-rewards").click(function(){ window.location.href='/rewards' });
-	$("#feature-structures").click(function(){ window.location.href='/structures' });
-	$("#feature-map").click(function(){ window.location.href='/map' });
+	$("#feature-lives").click(function(){ window.location.href='#/players' });
+	$("#feature-score").click(function(){ window.location.href='#/players' });
+	$("#feature-rewards").click(function(){ window.location.href='#/rewards' });
+	$("#feature-structures").click(function(){ window.location.href='#/structures' });
+	$("#feature-map").click(function(){ window.location.href='#/map' });
 
 	function load_summary_donations (data)  {
 		var content = "";
