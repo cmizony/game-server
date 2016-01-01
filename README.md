@@ -1,3 +1,5 @@
+[![Project Overview](gallery/charts.png)](gallery/)
+
 [![Dependency Status](https://www.versioneye.com/user/projects/555d6b1c634daa5dc8000cd3/badge.svg?style=flat)](https://www.versioneye.com/user/projects/555d6b1c634daa5dc8000cd3)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/cmizony/game-server?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
@@ -6,6 +8,8 @@
 Features built on top of the server
 * Minecraft server backend API and misc functionalities implemented in PHP using CodeIgniter v3
 * Minecraft server front-end web-app that display the information from the back-end API
+
+**Demo at** [huitaplus.com](http://huitaplus.com)
 
 ## Details
 
